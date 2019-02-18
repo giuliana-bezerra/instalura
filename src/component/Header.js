@@ -9,32 +9,21 @@ export default class Header extends Component {
 
   render(){
       return (
-        <header className="header container">
-          <h1 className="header-logo">
-            Instalura
-          </h1>
-          
+        <div className="centered">
+          <header className="header container">
+            <h1 className="header-logo">
+              Instalura
+            </h1>
+
+            <form>
+              <a href="/logout">Logout</a>
+            </form>
+          </header>            
           <form className="header-busca" onSubmit={this.pesquisar}>
             <input type="text" name="search" placeholder="Pesquisa" className="header-busca-campo" ref={this.pesquisaTexto}/>
             <input type="submit" value="Buscar" className="header-busca-submit"/>
           </form>
-
-          <form>
-            <a href="/logout">Logout</a>
-          </form>
-          
-          <nav>
-            <ul className="header-nav">
-              <li className="header-nav-item">
-                <a href="#curtidas"> 
-                  ♡
-                  {/*                 ♥ */}
-                  {/* Quem deu like nas minhas fotos */}
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </header>            
+        </div>
       );
   }
   
