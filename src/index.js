@@ -6,10 +6,10 @@ import './css/login.css';
 import App from './App';
 import Login from './componentes/Login';
 import Logout from './componentes/Logout';
-import {Router,Route,browserHistory} from 'react-router';
-import {matchPattern} from 'react-router/lib/PatternUtils';
+import { Router,Route,browserHistory } from 'react-router';
+import { matchPattern } from 'react-router/lib/PatternUtils';
 import { Provider } from 'react-redux';
-import { store} from './store';
+import { store } from './store';
 
 function verificaAutenticacao(nextState,replace) {
   const resultado = matchPattern('/timeline(/:login)',nextState.location.pathname);
