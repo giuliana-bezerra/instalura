@@ -2,9 +2,6 @@
   "name": "instalura",
   "version": "0.1.0",
   "private": true,
-  "devDependencies": {
-    "react-scripts": "^0.8.5"
-  },
   "dependencies": {
     "express": "^4.16.4",
     "ignore-styles": "^5.0.1",
@@ -15,7 +12,8 @@
     "react-router": "^3.0.0",
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "react-scripts": "^0.8.5"
   },
   "scripts": {
     "start": "react-scripts start",
